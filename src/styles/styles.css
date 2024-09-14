@@ -1,0 +1,53 @@
+
+
+
+/* Basic styling for inputs */
+input,
+select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Style for valid input fields */
+input:valid,
+select:valid {
+  border-color: #28a745; /* Green border for valid inputs */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Optional: add a green shadow */
+}
+
+/* Style for invalid input fields */
+input:invalid,
+select:invalid {
+  border-color: #dc3545; /* Red border for invalid inputs */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Optional: add a red shadow */
+}
+
+/* Optional: styling for placeholder text */
+input:placeholder-shown:invalid,
+select:placeholder-shown:invalid {
+  color: #dc3545; /* Red placeholder text when field is invalid */
+}
+
+/* Optional: focus styles */
+input:focus:valid,
+select:focus:valid {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+input:focus:invalid,
+select:focus:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* Error message styling */
+.error {
+  color: #dc3545; /* Red color for error messages */
+  font-size: 0.875em; /* Slightly smaller text for error messages */
+  margin-top: 4px;
+}
